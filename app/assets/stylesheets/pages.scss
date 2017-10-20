@@ -4,7 +4,7 @@
 }
 body,html {
     font-family: 'Roboto', sans-serif;
-    font-weight: 300; height: 100%; 
+    font-weight: 300; height: 100%;
     width: 100%;
 }
 .container {
@@ -121,20 +121,19 @@ a.btn {
 .main h2 {
     color: #000;
     font-size: 48px;
-    line-height: 56px; 
+    line-height: 56px;
     text-align: right;
 }
 .home h2 {
     color: #fff;
 }
 a.btn:hover,.nav li a:hover,.nav-btn:hover {
-    background-color: darkblue;
+    background-color: #434343;
     color: #fff;
     transition: background-color .5s;
 }
 .home .jumbotron {
-    /*background: url("https://i.imgur.com/uGnU6IS.jpg") center center;*/
-    background: image-url("aliens2.jpg") center;
+    background: image-url("P1000946.png") center;
     background-size: cover;
     min-height: 600px;
     width: 100%;
@@ -168,7 +167,7 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
     text-decoration: none;
     transition: color .5s;
 }
-.project:hover { 
+.project:hover {
     color: lightblue;
 }
 .project h3,.project p,.about h2,.about p {
@@ -242,4 +241,3 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
         margin: 0;
     }
 }
-
