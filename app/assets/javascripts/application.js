@@ -14,11 +14,3 @@
 //= require turbolinks
 //= require_tree .
 //= require slider
-$(document).ready(() => {
-  $('.main home h2').on('mouseenter', () => {
-    $(event.currentTarget).addClass('highlight');
-  }.on('mouseleave', () => {
-    $(event.currentTarget).removeClass('highlight');
-  });
-
-});
