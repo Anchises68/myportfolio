@@ -1,24 +1,19 @@
 <div class="main portfolio">
-    <div class="jumbotron slideshow">
-
+    <div class="jumbotron slideshow" id="slider">
         <div class="slideshow-container">
-            <!--<div class="slide">
+
+            <a href="#" class="control_next">>></a>
+            <a href="#" class="control_prev"><</a>
                 <ul>
-                    <li><%= image_tag "PinkFloyd.jpg" %></li>
+                    <li><%= image_tag "Screen3.png" %></li>
                     <li><%= image_tag "aliens.jpg" %></li>
                     <li><%= image_tag "Screen1.svg" %></li>
-                </ul>  </div>-->
-
-            <div class="slide"><%= image_tag "P1000946.png" %> </div>
-            <div class="slide"><%= image_tag "PinkFloyd.jpg" %> </div>
-            <div class="slide"><%= image_tag "Screen1.svg" %> </div>
-            <div class="slide"><%= image_tag "Screen3.png" %></div>
-
+                </ul>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <a class="col-md-6 project" href="https://mysterious-gorge-45823.herokuapp.com/">
+            <%= link_to "https://mysterious-gorge-45823.herokuapp.com/", :class => "col-md-6 project" do %>
                 <div class="thumbnail-header">
                     <div class="thumbnail-header-btn"></div>
                     <div class="thumbnail-header-btn"></div>
@@ -26,10 +21,9 @@
                 </div>
                 <div class="thumbnail"><%= image_tag("CASS.png") %></div>
                 <h3>Stories</h3>
-                <p>Preview of a travel photo journal app.  Ruby on Rails project deployed on Heroku.  Menu button needs work and need to finish signup
-                database. </p>
-            </a>
-            <a class="col-md-6 project" href="https://github.com/Anchises68/bass-music">
+                <p>Preview of a travel photo journal app with a simple sign up page.  Ruby on Rails project deployed on Heroku. </p>
+            <% end %>
+            <%= link_to "https://github.com/Anchises68/bass-music", :class => "col-md-6 project" do %>
                 <div class="thumbnail-header">
                     <div class="thumbnail-header-btn"></div>
                     <div class="thumbnail-header-btn"></div>
@@ -38,10 +32,10 @@
                 <div class="thumbnail"><%= image_tag "bass.png" %></div>
                     <h3>Bass-Music</h3>
                     <p>Simple page with album covers.  Displays song lists when album is clicked.  Ruby on Rails project not deployed.</p>
-                    </a>
-                </div>
+            <% end %>
+        </div>
         <div class="row">
-            <a class="col-md-6 project" href="https://github.com/Anchises68/broadway">
+            <%= link_to "https://github.com/Anchises68/broadway", :class => "col-md-6 project" do %>
                 <div class="thumbnail-header">
                     <div class="thumbnail-header-btn"></div>
                     <div class="thumbnail-header-btn"></div>
@@ -50,8 +44,8 @@
                 <div class="thumbnail"><%= image_tag "WAB.png" %> </div>
                     <h3>We Are Broadway</h3>
                     <p>Nice simple portfolio template.  First Ruby on Rails freelance project.  Not deployed.</p>
-            </a>
-            <a class="col-md-6 project" href="https://github.com/Anchises68/Markov">
+            <% end %>
+            <%= link_to "https://github.com/Anchises68/Markov", :class => "col-md-6 project" do %>
                 <div class="thumbnail-header">
                     <div class="thumbnail-header-btn"></div>
                     <div class="thumbnail-header-btn"></div>
@@ -60,10 +54,10 @@
                 <div class="thumbnail"><%= image_tag "MarkovChain.jpg" %> </div>
                     <h3>Monkeys with Type Writers</h3>
                     <p>Takes in text from a url and uses the Markov Chain to emulate text by selecting random workds.  Built on Pyton.  Needs to be built out and dressed up</p>
-            </a>
+            <% end %>
         </div>
         <div class="row">
-            <a class="col-md-6 project" href="https://github.com/Anchises68/Watson-">
+            <%= link_to "https://github.com/Anchises68/Watson-", :class => "col-md-6 project" do %>
                 <div class="thumbnail-header">
                     <div class="thumbnail-header-btn"></div>
                     <div class="thumbnail-header-btn"></div>
@@ -72,19 +66,17 @@
                 <div class="thumbnail"><%= image_tag "Screen3.png" %> </div>
                     <h3>Celbrity Match</h3>
                     <p>Uses Watson API to match user user personality with a Twitter celebrity.  Python project.  Need to create user interface.</p>
-            </a>
-            <a class="col-md-6 project" href="https://github.com/Anchises68/LiteBrite">
+            <% end %>
+            <%= link_to "https://github.com/Anchises68/newstand", :class => "col-md-6 project" do %>
                 <div class="thumbnail-header">
                     <div class="thumbnail-header-btn"></div>
                     <div class="thumbnail-header-btn"></div>
                     <div class="thumbnail-header-btn"></div>
                 </div>
-                <div class="thumbnail"><%= image_tag "Screen2.png" %> </div>
-                    <h3>Lite Brite</h3>
-                    <p>Simple jQuery exercise.</p>
-            </a>
+                <div class="thumbnail"><%= image_tag "newstand.png" %> </div>
+                    <h3>Newstand</h3>
+                    <p>Latest Ruby on Rails Authentication project.</p>
+            <% end %>
         </div>
     </div>
 </div>
-<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="../../assets/javascripts/unslider.js"></script>
