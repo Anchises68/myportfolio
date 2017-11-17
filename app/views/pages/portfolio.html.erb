@@ -1,14 +1,32 @@
 <div class="main portfolio">
-    <div class="jumbotron slideshow" id="slider">
-        <div class="slideshow-container">
+    <div class="jumbotron slideshow">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
 
-            <a href="#" class="control_next">>></a>
-            <a href="#" class="control_prev"><</a>
-                <ul>
-                    <li><%= image_tag "aliens2.jpg" %></li>
-                    <li><%= image_tag "aliens.jpg" %></li>
-                    <li><%= image_tag "Screen1.svg" %></li>
-                </ul>
+          <div class="carousel-inner">
+            <div class="item active"><%= image_tag "aliens2.jpg" %>
+              <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>LA is always so much fun!</p>
+              </div>
+            </div>
+            <div class="item"><%= image_tag "MarkovChain.jpg" %></div>
+            <div class="item"><%= image_tag "bass-music.jpg" %></div>
+          </div>
+          <!-- Left and right controls -->
+         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+         </a>
+         <a class="right carousel-control" href="#myCarousel" data-slide="next">
+           <span class="glyphicon glyphicon-chevron-right"></span>
+           <span class="sr-only">Next</span>
+         </a>
         </div>
     </div>
     <div class="container">
@@ -23,15 +41,15 @@
                 <h3>Stories</h3>
                 <p>Preview of a travel photo journal app with a simple sign up page.  Ruby on Rails project deployed on Heroku. </p>
             <% end %>
-            <%= link_to "https://github.com/Anchises68/bass-music", :class => "col-md-6 project" do %>
+            <%= link_to "https://safe-crag-43385.herokuapp.com/", :class => "col-md-6 project" do %>
                 <div class="thumbnail-header">
                     <div class="thumbnail-header-btn"></div>
                     <div class="thumbnail-header-btn"></div>
                     <div class="thumbnail-header-btn"></div>
                 </div>
-                <div class="thumbnail"><%= image_tag "bass.png" %></div>
-                    <h3>Bass-Music</h3>
-                    <p>Simple page with album covers.  Displays song lists when album is clicked.  Ruby on Rails project not deployed.</p>
+                <div class="thumbnail"><%= image_tag "newstand3.png" %></div>
+                    <h3>Newstand</h3>
+                    <p>Most recent RoR completed project. App includes authentication and multi-user access. Deployed on Heroku.</p>
             <% end %>
         </div>
         <div class="row">
@@ -43,7 +61,7 @@
                 </div>
                 <div class="thumbnail"><%= image_tag "WAB.png" %> </div>
                     <h3>We Are Broadway</h3>
-                    <p>Nice simple portfolio template.  First Ruby on Rails freelance project.  Not deployed.</p>
+                    <p>Nice simple portfolio template.  First Ruby on Rails project.  Not deployed.</p>
             <% end %>
             <%= link_to "https://github.com/Anchises68/Markov", :class => "col-md-6 project" do %>
                 <div class="thumbnail-header">
@@ -53,7 +71,7 @@
                 </div>
                 <div class="thumbnail"><%= image_tag "MarkovChain.jpg" %> </div>
                     <h3>Monkeys with Type Writers</h3>
-                    <p>Takes in text from a url and uses the Markov Chain to emulate text by selecting random workds.  Built on Pyton.  Needs to be built out and dressed up</p>
+                    <p>Takes in text from a url and uses the Markov Chain to emulate text by selecting random words.  Python project.</p>
             <% end %>
         </div>
         <div class="row">
@@ -67,15 +85,15 @@
                     <h3>Celbrity Match</h3>
                     <p>Uses Watson API to match user user personality with a Twitter celebrity.  Python project.  Need to create user interface.</p>
             <% end %>
-            <%= link_to "https://github.com/Anchises68/newstand", :class => "col-md-6 project" do %>
+            <%= link_to "https://github.com/Anchises68/bass-music", :class => "col-md-6 project" do %>
                 <div class="thumbnail-header">
                     <div class="thumbnail-header-btn"></div>
                     <div class="thumbnail-header-btn"></div>
                     <div class="thumbnail-header-btn"></div>
                 </div>
-                <div class="thumbnail"><%= image_tag "newstand.png" %> </div>
-                    <h3>Newstand</h3>
-                    <p>Latest Ruby on Rails Authentication project.</p>
+                <div class="thumbnail"><%= image_tag "bass.png" %> </div>
+                    <h3>Bass-Music</h3>
+                    <p>Simple page with album covers.  Displays song lists when album is clicked.  Ruby on Rails project not deployed.</p>
             <% end %>
         </div>
     </div>
