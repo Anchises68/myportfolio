@@ -9,12 +9,15 @@
           </ol>
 
           <div class="carousel-inner">
-            <div class="item active"><%= image_tag "aliens2.jpg" %>
+            <div class="item active"><%= image_tag "aliens2.jpg" do %>
               <div class="carousel-caption">
                 <h3>Los Angeles</h3>
                 <p>LA is always so much fun!</p>
               </div>
+              <% end %>
+
             </div>
+
             <div class="item"><%= image_tag "MarkovChain.jpg" %></div>
             <div class="item"><%= image_tag "bass-music.jpg" %></div>
           </div>
